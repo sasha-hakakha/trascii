@@ -4,4 +4,4 @@ mod entity;
 
 pub use block::Block;
 pub use world::World;
-pub use world::Entity;
+pub use entity::Entity;

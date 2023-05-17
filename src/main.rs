@@ -6,7 +6,7 @@ use crossterm::{
     style::{Color, Print, ResetColor, SetForegroundColor},
     Result,
 };
-use std::io::{stdout, Write};
+use std::io::{stdout};
 
 fn main() -> Result<()> {
     let mut stdout = stdout();
@@ -42,6 +42,6 @@ fn main() -> Result<()> {
     // Clear the screen and disable raw mode before exiting
     execute!(stdout, Clear(ClearType::All))?;
     terminal::disable_raw_mode()?;
-
+    println!("we lit!");
     Ok(())
 }
